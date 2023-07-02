@@ -1,0 +1,17 @@
+.mainsite {
+    margin-top: 100px;
+    background-color: rgba(212, 242, 233, 0.795);
+    padding: 1px 15px 40px 15px;
+    border-radius: 10px;
+}
+
+.mainsite h3{
+    font-size: 30px;
+    color: black;
+}
+
+.mainsite h1{
+    font-size: 70px;
+    color: black;
+}
+

@@ -1,0 +1,41 @@
+.land {
+    margin-top: 120px;
+}
+
+input {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.container-land {
+    background-color: rgba(212, 242, 233, 0.795);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 25px;
+    margin: 1%;
+}
+
+.land img {
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.land h3 {
+    font-size: 30px;
+}
+
+.label{
+    color: black;
+}
+
+.btn{
+    background-color: #2dabab;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}

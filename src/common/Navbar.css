@@ -1,0 +1,39 @@
+.container-nav {
+    background-color: #2196f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 80px;
+
+}
+
+
+
+.left-nav {
+    flex-grow: 0.05;
+}
+
+.right-nav {
+    flex-grow: 0.05;
+}
+
+.navbtn {
+    color: rgb(245, 244, 248);
+    font-size: 30px;
+}
+
+.left-nav img {
+    width: 150px;
+    height: auto;
+    padding: 10px 0px 8px 0px;
+}
+
+.navbtn:hover {
+    color: rgb(131, 221, 231);
+}

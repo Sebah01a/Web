@@ -1,0 +1,12 @@
+.main-button{
+    height: 80px;
+    width: 200px;
+    font-size: 25px;
+    background-color: #2dabab;
+    color: white;
+    font-weight: 600;
+}
+
+.main-button:hover {
+    background-color: #267421;  
+}

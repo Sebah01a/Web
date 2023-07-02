@@ -1,0 +1,397 @@
+.game-container {
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+    margin-top: 100px;
+    margin-left: -112px;
+  }
+  
+  .board-container {
+    display: grid;
+    background-color: rgb(176, 238, 221);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+  }
+
+  .square-info {
+    background-color: rgb(31, 110, 206);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .square-bueno {
+    background-color: rgb(164, 224, 36);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: rgb(14, 14, 15);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  }
+
+  .square-malo {
+    background-color: rgb(225, 107, 71);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: rgb(14, 14, 15);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  }
+  
+
+  .dice-button, .level-button, .buy-button, .turn-button, .accept-button, .pay-button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dice-button button{
+    margin: 0 4px 0 4px;
+    font-size: 18px;
+    background-color: rgb(14, 38, 218);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 70%;
+  }
+  
+  .accept-button button{
+    margin: 0 4px 0 4px;
+    font-size: 18px;
+    background-image: linear-gradient(rgb(164, 224, 36), rgb(225, 107, 71));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 70%;
+  }
+
+  .level-button button{
+    font-size: 18px;
+    background-color: rgb(23, 225, 232);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    height: 70%;
+  }
+
+  .buy-button button{
+    font-size: 18px;
+    background-color: rgb(14, 218, 65);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    height: 70%;
+  }
+
+  .pay-button button{
+    font-size: 18px;
+    background-color: rgb(218, 51, 14);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    height: 70%;
+  }
+
+  .turn-button button{
+    margin: 0 4px 0 4px;
+    font-size: 18px;
+    background-color: rgb(84, 12, 58);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 70%;
+  }
+
+  .dice-button button:hover {
+    background-color: rgb(10, 22, 112);
+  }
+
+  .accept-button button:hover {
+    opacity: 0.7;
+  }
+
+  .level-button button:hover {
+    background-color: rgb(11, 98, 101);
+  }
+
+  .buy-button button:hover {
+    background-color: rgb(7, 131, 38);
+  }
+
+  .pay-button button:hover {
+    background-color: rgb(173, 39, 9);
+  }
+  .turn-button button:hover {
+    background-color: rgb(41, 6, 28);
+  }
+  
+  .dice-number {
+    background-color: rgb(239, 243, 238);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .square-inicio {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+  }
+  
+.player-image{
+  width: 30px;
+  height: auto;
+  z-index: 1;
+}
+
+  .square-Agronomia,
+  .square-Arquitectura,
+  .square-Artes,
+  .square-Biologia,
+  .square-Comunicaciones,
+  .square-Derecho,
+  .square-Diseño,
+  .square-Educacion,
+  .square-Filosofia,
+  .square-Fisica,
+  .square-Humanidades,
+  .square-Ingenieria,
+  .square-Letras,
+  .square-Matematicas,
+  .square-Medicina,
+  .square-Politica,
+  .square-Psicologia,
+  .square-Quimica,
+  .square-Sociales,
+  .square-Teologia {
+    border: 1px solid rgb(255, 255, 255);
+    background-image: url("../src/assets/imgs/ingenieria.jpg");
+    opacity: 0.9;
+    font-weight: bold;
+    height: 100%;
+    color: rgb(14, 14, 15);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  }
+
+  
+  .square-Agronomia {
+    background-image: url("../src/assets/imgs/agronomia.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Artes {
+    background-image: url("../src/assets/imgs/artes.jpg");
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+  
+  .square-Arquitectura {
+    background-image: url("../src/assets/imgs/arquitectura.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Biologia {
+    background-image: url("../src/assets/imgs/biologia.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Comunicaciones {
+    background-image: url("../src/assets/imgs/comunicaciones.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Derecho {
+    background-image: url("../src/assets/imgs/derecho.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Diseño {
+    background-image: url("../src/assets/imgs/diseno.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Educacion {
+    background-image: url("../src/assets/imgs/educacion.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Filosofia {
+    background-image: url("../src/assets/imgs/filosofia.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Fisica {
+    background-image: url("../src/assets/imgs/fisica.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Humanidades {
+    background-image: url("../src/assets/imgs/humanidades.jpeg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Ingenieria {
+    background-image: url("../src/assets/imgs/ingenieria.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Letras {
+    background-image: url("../src/assets/imgs/letras.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Matematicas {
+    background-image: url("../src/assets/imgs/matematicas.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Medicina {
+    background-image: url("../src/assets/imgs/medicina.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Politica {
+    background-image: url("../src/assets/imgs/politica.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Psicologia {
+    background-image: url("../src/assets/imgs/psicologia.jpeg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Quimica {
+    background-image: url("../src/assets/imgs/quimica.jpg");
+    background-size: 100% 100%;
+  }
+  
+  .square-Sociales {
+    background-image: url("../src/assets/imgs/sociales.png");
+    background-size: 100% 100%;
+  }
+  
+  .square-Teologia {
+    background-image: url("../src/assets/imgs/teologia.jpg");
+    background-size: 100% 100%;
+
+  }
+
+  .logo-center {
+    position: relative;
+    background-image: url("../src/assets/imgs/logo-text.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
+  .logo-center::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .logo-center img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .player-stats-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    height: auto;
+    background-color: rgb(152, 181, 202);
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .player-stat {
+    flex-grow: 1;
+    background-color: rgb(217, 227, 208);
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .jugador-actual {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .winner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .winner-message {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
